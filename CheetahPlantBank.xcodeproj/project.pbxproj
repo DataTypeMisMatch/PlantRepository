@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		98171C802C92738A00491BC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98171C7F2C92738A00491BC7 /* AppDelegate.swift */; };
 		98171C822C92738A00491BC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98171C812C92738A00491BC7 /* SceneDelegate.swift */; };
-		98171C842C92738A00491BC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98171C832C92738A00491BC7 /* ViewController.swift */; };
 		98171C872C92738A00491BC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98171C852C92738A00491BC7 /* Main.storyboard */; };
 		98171C8A2C92738A00491BC7 /* CheetahPlantBank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98171C882C92738A00491BC7 /* CheetahPlantBank.xcdatamodeld */; };
 		98171C8C2C92738D00491BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98171C8B2C92738D00491BC7 /* Assets.xcassets */; };
 		98171C8F2C92738D00491BC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98171C8D2C92738D00491BC7 /* LaunchScreen.storyboard */; };
+		98171C972C9275AE00491BC7 /* PlantDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98171C962C9275AE00491BC7 /* PlantDetailsTableViewController.swift */; };
+		9832BE632C9276B300E9C2DD /* PlantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9832BE622C9276B300E9C2DD /* PlantItem.swift */; };
+		9832BE652C92775C00E9C2DD /* PlantTextTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9832BE642C92775C00E9C2DD /* PlantTextTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		98171C7C2C92738A00491BC7 /* CheetahPlantBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheetahPlantBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98171C7F2C92738A00491BC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98171C812C92738A00491BC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		98171C832C92738A00491BC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98171C862C92738A00491BC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98171C892C92738A00491BC7 /* CheetahPlantBank.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CheetahPlantBank.xcdatamodel; sourceTree = "<group>"; };
 		98171C8B2C92738D00491BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98171C8E2C92738D00491BC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98171C902C92738D00491BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98171C962C9275AE00491BC7 /* PlantDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsTableViewController.swift; sourceTree = "<group>"; };
+		9832BE622C9276B300E9C2DD /* PlantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantItem.swift; sourceTree = "<group>"; };
+		9832BE642C92775C00E9C2DD /* PlantTextTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTextTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				98171C7F2C92738A00491BC7 /* AppDelegate.swift */,
-				98171C812C92738A00491BC7 /* SceneDelegate.swift */,
-				98171C832C92738A00491BC7 /* ViewController.swift */,
-				98171C852C92738A00491BC7 /* Main.storyboard */,
 				98171C8B2C92738D00491BC7 /* Assets.xcassets */,
-				98171C8D2C92738D00491BC7 /* LaunchScreen.storyboard */,
-				98171C902C92738D00491BC7 /* Info.plist */,
 				98171C882C92738A00491BC7 /* CheetahPlantBank.xcdatamodeld */,
+				98171C902C92738D00491BC7 /* Info.plist */,
+				98171C812C92738A00491BC7 /* SceneDelegate.swift */,
+				98171C8D2C92738D00491BC7 /* LaunchScreen.storyboard */,
+				98171C852C92738A00491BC7 /* Main.storyboard */,
+				98171C962C9275AE00491BC7 /* PlantDetailsTableViewController.swift */,
+				9832BE622C9276B300E9C2DD /* PlantItem.swift */,
+				9832BE642C92775C00E9C2DD /* PlantTextTableViewController.swift */,
 			);
 			path = CheetahPlantBank;
 			sourceTree = "<group>";
@@ -141,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98171C842C92738A00491BC7 /* ViewController.swift in Sources */,
 				98171C802C92738A00491BC7 /* AppDelegate.swift in Sources */,
 				98171C8A2C92738A00491BC7 /* CheetahPlantBank.xcdatamodeld in Sources */,
+				98171C972C9275AE00491BC7 /* PlantDetailsTableViewController.swift in Sources */,
+				9832BE632C9276B300E9C2DD /* PlantItem.swift in Sources */,
+				9832BE652C92775C00E9C2DD /* PlantTextTableViewController.swift in Sources */,
 				98171C822C92738A00491BC7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,11 +307,13 @@
 				DEVELOPMENT_TEAM = 8U5J6FQNN2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CheetahPlantBank/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take Photo for Plant";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Add Photo for Plant";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,11 +337,13 @@
 				DEVELOPMENT_TEAM = 8U5J6FQNN2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CheetahPlantBank/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take Photo for Plant";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Add Photo for Plant";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
